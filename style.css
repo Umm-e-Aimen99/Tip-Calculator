@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.calculator-box,
+.results-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.tip-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tip-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #e5e7eb;
+    cursor: pointer;
+}
+
+.tip-btn.active {
+    background: #2563eb;
+    color: white;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result-card {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.result-card h3 {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.result-card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .tip-buttons {
+        flex-direction: column;
+    }
+}
+

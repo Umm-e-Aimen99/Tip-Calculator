@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="calculator-box">
+            <h1>Tip Calculator</h1>
+            <p class="subtitle">Split bills instantly</p>
+
+            <!-- Bill Amount -->
+            <div class="input-group">
+                <label>Bill Amount (Rs)</label>
+                <input type="number" id="bill" placeholder="Enter bill amount">
+                <small id="billError" class="error"></small>
+            </div>
+
+            <!-- Tip Buttons -->
+            <div class="input-group">
+                <label>Select Tip %</label>
+
+                <div class="tip-buttons">
+                    <button class="tip-btn active" data-tip="10">10%</button>
+                    <button class="tip-btn" data-tip="15">15%</button>
+                    <button class="tip-btn" data-tip="20">20%</button>
+                </div>
+
+                <input type="number" id="customTip" placeholder="Custom Tip %">
+                <small id="tipError" class="error"></small>
+            </div>
+
+            <!-- People -->
+            <div class="input-group">
+                <label>Number of People</label>
+                <input type="number" id="people" value="1">
+                <small id="peopleError" class="error"></small>
+            </div>
+
+            <button id="resetBtn" class="reset-btn">Reset</button>
+        </div>
+
+        <!-- Results -->
+        <div class="results-box">
+
+            <div class="result-card">
+                <h3>Total Tip</h3>
+                <p id="tipAmount">Rs 0.00</p>
+            </div>
+
+            <div class="result-card">
+                <h3>Grand Total</h3>
+                <p id="grandTotal">Rs 0.00</p>
+            </div>
+
+            <div class="result-card">
+                <h3>Per Person</h3>
+                <p id="perPerson">Rs 0.00</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
